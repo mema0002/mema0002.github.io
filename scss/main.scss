@@ -4,14 +4,16 @@ body{
   margin: 0 auto;
   color:$text-color;
   font-family: 'Francois One', sans-serif;
-  font-size: 24px;
+  font-size: $font-size;
   font-weight: bold;
+}
+.card{
+  background-color: $card-color;
 }
 header,main,footer{
   display: block;
   box-sizing: border-box;
   margin-top: 10px;
-  background-color: $foreground-color;
   color: $text-color!important;
 }
 .navbar .navbar-light .bg-light{
@@ -20,7 +22,7 @@ header,main,footer{
 .navbar-light .navbar-brand, .navbar li a{
 color : $text-color;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: $font-size;
 }
 .middle{
   max-width: 400px;
@@ -31,7 +33,7 @@ color : $text-color;
 }
 .heading{
   color: $heading-color;
-  font-size: 25px;
+  font-size: $heading-size;
   font-weight: bold;
   font-family: monospace;
   text-align: center;
@@ -57,9 +59,18 @@ hr{
   text-align: justify;
 }
 .white{
-  background-color: white;
+  background-color: $card-color;
   color: inherit;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-color: $text-color;
+color: $heading-color;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover {
+color:red;
+}
+.card-img{
+  width: 150px;
+  padding-top: 5px;
+  padding-right:15px;
+float: left;
 }
