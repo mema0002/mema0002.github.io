@@ -1,27 +1,33 @@
 body {
   background-color: white;
   margin: 0 auto;
-  color: white;
+  color: #233D4D;
   font-family: 'Francois One', sans-serif;
   font-size: 18px;
   font-weight: bold; }
 
 .card {
-  background-color: #F2B680; }
+  color: #233D4D;
+  background-color: #F2B680;
+  font-family: 'Raleway', sans-serif; }
 
 header, main, footer {
   display: block;
   box-sizing: border-box;
   margin-top: 10px;
-  color: white !important; }
+  color: #233D4D !important; }
 
 .navbar .navbar-light .bg-light {
-  color: white; }
+  color: #233D4D; }
 
 .navbar-light .navbar-brand, .navbar li a {
-  color: white;
-  text-transform: uppercase;
-  font-size: 18px; }
+  color: #233D4D;
+  text-transform: capitalize;
+  font-family: "Stalemate", cursive;
+  font-size: 35px; }
+
+.navbar-brand li a {
+  font-size: 35px; }
 
 .middle {
   max-width: 400px;
@@ -31,10 +37,10 @@ header, main, footer {
   text-align: center; }
 
 .heading {
-  color: #4D9E9E;
+  color: #742E30;
   font-size: 35px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: "Stalemate", cursive;
   text-align: center;
   padding: 5px;
   margin: 0 auto; }
@@ -60,11 +66,11 @@ hr {
   background-color: #F2B680;
   color: inherit; }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #4D9E9E; }
+.navbar-light .navbar-nav .nav-link {
+  color: #742E30; }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link:hover {
-  color: red; }
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #233D4D; }
 
 .card-img {
   width: 150px;

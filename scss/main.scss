@@ -8,7 +8,9 @@ body{
   font-weight: bold;
 }
 .card{
+  color:#233D4D;
   background-color: $card-color;
+  font-family: 'Raleway', sans-serif;
 }
 header,main,footer{
   display: block;
@@ -19,10 +21,17 @@ header,main,footer{
 .navbar .navbar-light .bg-light{
   color: $text-color;
 }
+.navbar-brand{
+
+}
 .navbar-light .navbar-brand, .navbar li a{
 color : $text-color;
-  text-transform: uppercase;
-  font-size: $font-size;
+  text-transform: capitalize;
+font-family: $font-headings;
+  font-size: $heading-size;
+}
+.navbar-brand li a{
+  font-size: $heading-size;
 }
 .middle{
   max-width: 400px;
@@ -35,7 +44,7 @@ color : $text-color;
   color: $heading-color;
   font-size: $heading-size;
   font-weight: bold;
-  font-family: monospace;
+  font-family: $font-headings;
   text-align: center;
   padding: 5px;
   margin:0 auto;
@@ -62,11 +71,11 @@ hr{
   background-color: $card-color;
   color: inherit;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-color: $heading-color;
+.navbar-light .navbar-nav .nav-link{
+  color: $heading-color;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover {
-color:red;
+.navbar-light .navbar-nav .nav-link:hover{
+  color: $text-color;
 }
 .card-img{
   width: 150px;
