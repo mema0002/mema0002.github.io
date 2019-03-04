@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Story | Mahvin</title>
+  <title>Videography | Mahvin</title>
 <!-- CSS links -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="\css\main.css">
+<link rel="stylesheet" href="\css\work.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
@@ -56,24 +57,35 @@
       </div>
     </nav>
 <banner>
-  <img class="banner-img" src="\img\g.jpg" alt="">
+
 </banner>
 </header>
 <main>
-<div class="section">
-
-
-  <div class="card">
-<h2 class="card-title heading">About Me<hr></h2>
-<p class="white"><img src="\img\d.jpg" class="card-img" alt="...">
-  I am an interactive media designer equipped with the creativity and meticulous eye for details,
-earned through years of professional and academic experience in the field of architecture.
-Filled with enthusiasm to continuously learn and discover the digital world in order to open
-new paths in creating content and web design application.
-</p>
+  <div style="text-align:center">
+    <h2 class="heading">My Video Work<hr></h2>
   </div>
-
-</div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  <!-- The four columns -->
+  <div class="row card-group">
+    <div class="card">
+<iframe  max-width="600" height="300" src="https://www.youtube.com/embed/GkY9di5SDUc?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+<iframe max-width="600"  height="300" src="https://www.youtube.com/embed/R_4mC_XW4-E?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+          <div class="card-group">
+            <div class="card">
+<iframe max-width="600" height="300" src="https://www.youtube.com/embed/Xw2_UtjTVEs?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+<iframe max-width="600" height="300" src="https://www.youtube.com/embed/4P1GxvJBs7c?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
 </main>
 <footer>
   <div class="newsletter">
@@ -98,6 +110,15 @@ new paths in creating content and web design application.
 </footer>
 
 <!-- Javascript -->
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

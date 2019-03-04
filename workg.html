@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home | Mahvin</title>
+  <title>Graphic Design | Mahvin</title>
 <!-- CSS links -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="\css\main.css">
@@ -40,10 +40,10 @@
               Work
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="work.html">Photgraphy</a>
-              <a class="dropdown-item" href="work.html">Videography</a>
+              <a class="dropdown-item" href="workp.html">Photgraphy</a>
+              <a class="dropdown-item" href="workv.html">Videography</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="work.html">Graphic Design</a>
+              <a class="dropdown-item" href="workg.html">Graphic Design</a>
             </div>
           </li>
           <li class="nav-item">
@@ -61,52 +61,39 @@
 </banner>
 </header>
 <main>
-  <div class="work">
-  <div class="row">
-    <div class="column">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
+  <h2 class="heading">My Graphic Design Work<hr></h2>
+  <div style="text-align:center">
+  </div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  <!-- The four columns -->
+  <div class="row card-group">
+    <div class="column card">
+      <img src="\img\g1.jpg" alt="Avatar" onclick="myFunction(this);">
     </div>
-
-      <div class="column">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-      </div>
-
-        <div class="column">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-        </div>
-
-
-          <div class="column">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-            <img src="I:\Web Production\portfolio\img\1.jpg" style="width:100%">
-          </div>
+    <div class="column card">
+      <img src="\img\g2.jpg" alt="LOGO" onclick="myFunction(this);">
+    </div>
+    <div class="column card">
+      <img src="\img\g3.jpg" alt="Icon" onclick="myFunction(this);">
+    </div>
+  </div>
+  <div class="row card-group">
+    <div class="column card">
+      <img src="\img\g4.jpg" alt="Herbs" onclick="myFunction(this);">
+    </div>
+    <div class="column card">
+      <img src="\img\g5.jpg" alt="shirt" onclick="myFunction(this);">
+    </div>
+    <div class="column card">
+      <img src="\img\g6.jpg" alt="Notebook" onclick="myFunction(this);">
+    </div>
+  </div>
   </div>
 
-
-</div>
 </main>
 <footer>
   <div class="newsletter">
@@ -131,6 +118,15 @@
 </footer>
 
 <!-- Javascript -->
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

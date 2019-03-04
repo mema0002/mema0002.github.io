@@ -1,39 +1,61 @@
+@import 'variables';
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
+/* The grid: Four equal columns that floats next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-.work{
-  max-width: 900px;
-  margin: 0 auto;
+  float: left;
+  box-sizing:border-box;
   padding: 10px;
+}
+.column img{
+  width:100%;
+}
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.card{
+  overflow: hidden;
+}
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+font-family: $fonts-text;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: $heading-size;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  font-family: $font-headings;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+.card{
+  background-color: transparent;
+  border-radius: 10px;
+  border:0;
 }
