@@ -8,7 +8,7 @@ body {
 
 .card {
   color: #233D4D;
-  background-color: #F2B680;
+  background-color: #FFF0F5;
   font-family: 'Raleway', sans-serif; }
 
 header, main, footer {
@@ -23,7 +23,7 @@ header, main, footer {
 .navbar-light .navbar-brand, .navbar li a {
   color: #233D4D;
   text-transform: capitalize;
-  font-family: "Stalemate", cursive;
+  font-family: "Dawning of a New Day", cursive;
   font-size: 35px; }
 
 .navbar-brand li a {
@@ -37,10 +37,10 @@ header, main, footer {
   text-align: center; }
 
 .heading {
-  color: #742E30;
+  color: #DB7093;
   font-size: 35px;
   font-weight: bold;
-  font-family: "Stalemate", cursive;
+  font-family: "Dawning of a New Day", cursive;
   text-align: center;
   padding: 5px;
   margin: 0 auto; }
@@ -63,11 +63,11 @@ hr {
   text-align: justify; }
 
 .white {
-  background-color: #F2B680;
+  background-color: #FFF0F5;
   color: inherit; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #742E30; }
+  color: #DB7093; }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #233D4D; }
@@ -77,3 +77,25 @@ hr {
   padding-top: 5px;
   padding-right: 15px;
   float: left; }
+
+.banner-img {
+  display: block;
+  margin: 0 auto; }
+
+footer a {
+  color: #DB7093;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #233D4D;
+  text-decoration: underline; }
+
+.btn {
+  background-color: white;
+  color: #DB7093;
+  border: 2px solid #DB7093; }
+
+.btn:hover {
+  background-color: #DB7093;
+  color: white;
+  border: 2px solid #DB7093; }
